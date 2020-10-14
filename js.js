@@ -25,7 +25,8 @@ var a = 10,
     contador = 0,
     mover = "",
     f1 = getPosFruta(0, 290),
-    f2 = getPosFruta(0, 140);
+    f2 = getPosFruta(0, 140),
+    pontos = 0;
 
 // cria snake e maçã 
 var ca = document.querySelector("canvas").getContext("2d");
@@ -98,6 +99,7 @@ function movimenta(e) {
   p.innerHTML += "<br>azul x: " + a;
   p.innerHTML += "<br>azul y: " + b;
   p.innerHTML += "<br>tecla: " + tecla;
+  p.innerHTML += "<br>pontos: " + pontos;
   limpa();
   ca.fillStyle = "blue";
   ca.fillRect(a, b, c, d);
@@ -110,6 +112,7 @@ function limpa() {
   {
     f1 = getPosFruta(0, 290);
     f2 = getPosFruta(0, 140);
+    pontos++;
   } else {
     fruta.fillStyle = "red";
     fruta.fillRect(f1, f2, c, d);
