@@ -1,1 +1,11 @@
-canvas{border:1px solid #000000;}
+main {
+    width: 322px; 
+    padding: 10px;   
+}
+canvas {
+    border:1px solid #000000;
+}
+p.titulo_topo_canvas {
+    width: 151px;
+    float:left;
+}
