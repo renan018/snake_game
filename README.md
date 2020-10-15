@@ -1,5 +1,4 @@
 # Game SnakeX
-Game SnakeX  
-change level, points, color.  
-have personal level.  
+Change level, points, color.  
+Have personal level.  
 Javascript/HTML5/CSS
