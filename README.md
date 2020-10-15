@@ -1,3 +1,5 @@
 # snake_game
-Clássico Jogo da cobrinha "snake" inventado em 1976.
-Feito na linguagem Javascript.
+Game SnakeX
+change level, points, color.
+have personal level.
+Javascript/HTML5/CSS
