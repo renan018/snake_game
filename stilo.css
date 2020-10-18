@@ -9,3 +9,9 @@ p.titulo_topo_canvas {
     width: 151px;
     float:left;
 }
+summary{
+    outline: none;
+}
+#controles>span {
+    cursor: pointer;
+}
