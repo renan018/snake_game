@@ -1,2 +1,2 @@
 # Game SnakeX
-Javascript/HTML5/CSS
+Javascript/HTML/CSS
