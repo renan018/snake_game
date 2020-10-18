@@ -130,7 +130,7 @@ function movimenta(teclaPressionada) {
     montaCorpo(teclaPressionada);
     desenhaSnake();
     desenhaFruta();
-    chaveBloqueio = false;
+    teclaBkp = teclaPressionada;
 }
 
 // Responsável pelo movimento
@@ -148,15 +148,10 @@ function acao(event) {
     if (teclaBkp !== teclaPressionada) {
         if((teclaBkp === 37 && teclaPressionada === 39) || (teclaBkp === 39 && teclaPressionada === 37)) return;
         if((teclaBkp === 38 && teclaPressionada === 40) || (teclaBkp === 40 && teclaPressionada === 38)) return;
-        if(chaveBloqueio === false){
-            teclaBkp = teclaPressionada;
-            clearInterval(mover);
-            if (teclaPressionada >= 37 && teclaPressionada <= 40) {
-                chaveBloqueio = true;
-                intervalo(teclaPressionada);
-            }    
+        clearInterval(mover);
+        if (teclaPressionada >= 37 && teclaPressionada <= 40) {
+            intervalo(teclaPressionada);
         }
-        
     }
 }
 
